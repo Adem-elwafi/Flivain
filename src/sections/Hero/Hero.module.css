@@ -1,0 +1,163 @@
+.heroSection {
+  inline-size: 100%;
+  padding-block-start: var(--space-8);
+  padding-block-end: var(--space-4);
+  position: relative;
+  overflow: visible;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* H1 Centered Two Lines */
+.heroTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+  margin-block-end: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleBreak {
+  display: block;
+}
+
+/* Visual Stage: Pill & Plane Container */
+.heroVisualStage {
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 1060px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sky Pill */
+.skyPill {
+  position: relative;
+  inline-size: 100%;
+  block-size: 200px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-bg-pill-cloud);
+  z-index: var(--z-sky-pill);
+}
+
+.skyImage {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Plane Overlay Layer */
+.planeWrapper {
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: 106%;
+  max-inline-size: none;
+  z-index: var(--z-plane-overlay);
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[dir="rtl"] .planeWrapper {
+  transform: translate(50%, -50%);
+}
+
+.planeImage {
+  inline-size: 100%;
+  block-size: auto;
+  filter: drop-shadow(0 20px 30px rgba(13, 27, 42, 0.25));
+  user-select: none;
+  animation: floatPlane 6s ease-in-out infinite;
+}
+
+/* Floating Animation purely on Y axis */
+@keyframes floatPlane {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planeImage {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   Breakpoints (640px, 1024px, 1280px)
+   ========================================================================== */
+@media (min-width: 640px) {
+  .heroTitle {
+    font-size: var(--font-size-4xl);
+    margin-block-end: var(--space-8);
+  }
+
+  .skyPill {
+    block-size: 260px;
+    border-radius: var(--radius-2xl);
+  }
+
+  .planeWrapper {
+    inline-size: 110%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroSection {
+    padding-block-start: var(--space-10);
+  }
+
+  .heroTitle {
+    font-size: 3.25rem;
+    line-height: 1.1;
+  }
+
+  .skyPill {
+    block-size: 320px;
+    border-radius: var(--radius-full);
+  }
+
+  .planeWrapper {
+    inline-size: 114%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroSection {
+    padding-block-start: var(--space-12);
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-5xl);
+  }
+
+  .skyPill {
+    block-size: 350px;
+  }
+
+  .planeWrapper {
+    inline-size: 118%;
+  }
+}

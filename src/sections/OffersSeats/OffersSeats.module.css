@@ -1,0 +1,239 @@
+.offersSection {
+  inline-size: 100%;
+  padding-block: var(--space-16);
+  background-color: var(--color-bg-body);
+}
+
+.headerCol {
+  text-align: center;
+  margin-block-end: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sectionBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-inline: var(--space-3);
+  padding-block: var(--space-1);
+  border-radius: var(--radius-full);
+  background-color: var(--color-brand-primary-light);
+  color: var(--color-brand-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  max-inline-size: 600px;
+}
+
+/* Offers Grid */
+.offersGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-block-end: var(--space-16);
+}
+
+.offerCard {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: all var(--transition-normal);
+}
+
+.offerCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-medium);
+}
+
+.offerRoute {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: var(--space-3);
+  border-block-end: 1px dashed var(--color-border-subtle);
+}
+
+.cityCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.cityCode {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text-primary);
+}
+
+.cityName {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.flightPath {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-brand-primary);
+}
+
+.flightDuration {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.offerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: auto;
+}
+
+.priceCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceLabel {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.priceValue {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-brand-primary);
+}
+
+/* Cabin Comparison Section */
+.comparisonHeader {
+  text-align: center;
+  margin-block-end: var(--space-10);
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.classCard {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-subtle);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.classCardHighlighted {
+  border-color: var(--color-brand-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -12px;
+  inset-inline-end: var(--space-6);
+  background-color: var(--color-brand-primary);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  padding-inline: var(--space-3);
+  padding-block: 4px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.classHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.className {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.classDesc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.perksList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.perkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+
+.checkIcon {
+  color: var(--color-brand-primary);
+  flex-shrink: 0;
+  margin-block-start: 2px;
+}
+
+/* ==========================================================================
+   Breakpoints (640px, 1024px, 1280px)
+   ========================================================================== */
+@media (min-width: 640px) {
+  .offersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .offersGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .comparisonGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .offersSection {
+    padding-block: var(--space-20);
+  }
+}

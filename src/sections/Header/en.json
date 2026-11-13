@@ -1,0 +1,17 @@
+{
+  "support": "Support",
+  "signIn": "Sign In",
+  "signUp": "Sign Up",
+  "contact": "Contact",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "offers": "Offers",
+    "seats": "Seats",
+    "destinations": "Destinations"
+  },
+  "brand": {
+    "name": "Flivain",
+    "tagline": "Flight Booking Agency"
+  }
+}

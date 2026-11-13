@@ -1,0 +1,16 @@
+{
+  "tabs": {
+    "economy": "Economy",
+    "business": "Business Class",
+    "firstClass": "First Class"
+  },
+  "fields": {
+    "location": "Location",
+    "locationPlaceholder": "Where to? (e.g. Dubai, Paris)",
+    "travelers": "Travelers",
+    "travelersCount": "{count} Traveler(s)",
+    "checkIn": "Check in",
+    "checkOut": "Check out"
+  },
+  "searchButtonAria": "Search flights"
+}

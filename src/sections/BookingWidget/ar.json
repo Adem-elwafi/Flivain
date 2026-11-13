@@ -1,0 +1,16 @@
+{
+  "tabs": {
+    "economy": "الدرجة السياحية",
+    "business": "درجة الأعمال",
+    "firstClass": "الدرجة الأولى"
+  },
+  "fields": {
+    "location": "الوجهة",
+    "locationPlaceholder": "إلى أين ترغب بالسفر؟ (مثال: دبي، باريس)",
+    "travelers": "المسافرون",
+    "travelersCount": "{count} مسافر",
+    "checkIn": "تاريخ المغادرة",
+    "checkOut": "تاريخ العودة"
+  },
+  "searchButtonAria": "بحث عن رحلات الطيران"
+}
