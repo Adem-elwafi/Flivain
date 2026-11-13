@@ -1,0 +1,21 @@
+.container {
+  inline-size: 100%;
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline, 1.5rem);
+}
+
+.standard {
+  max-inline-size: var(--container-max-width, 1200px);
+}
+
+.hero {
+  max-inline-size: var(--container-hero-max-width, 1280px);
+}
+
+.narrow {
+  max-inline-size: 860px;
+}
+
+.full {
+  max-inline-size: 100%;
+}

@@ -1,0 +1,44 @@
+.card {
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-subtle);
+  transition: all var(--transition-normal);
+}
+
+.paddingSm {
+  padding: var(--space-4);
+}
+
+.paddingMd {
+  padding: var(--space-6);
+}
+
+.paddingLg {
+  padding: var(--space-8);
+}
+
+.elevationNone {
+  box-shadow: none;
+}
+
+.elevationSm {
+  box-shadow: var(--shadow-sm);
+}
+
+.elevationMd {
+  box-shadow: var(--shadow-md);
+}
+
+.elevationCard {
+  box-shadow: var(--shadow-card);
+}
+
+.elevationWidget {
+  box-shadow: var(--shadow-widget);
+  border-radius: var(--radius-xl);
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
